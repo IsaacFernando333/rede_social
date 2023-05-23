@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./index.js"></script>
+    <title>L-Aventur</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <nav>
+            <div class="logo"><h1>L-Aventur</h1></div>
+            <div class="tendencias">
+                <ul>
+                    <li><a href="#">Em alta</a> <ion-icon name="trending-up-outline"></ion-icon></li>
+                    <li><a href="#">Sua região</a> <ion-icon name="pin-outline"></ion-icon></li>
+                    <li><a href="#">Seus Amigos</a> <ion-icon name="people-circle-outline"></ion-icon></li>
+                    <li><a class="suporte" href="#">Suporte</a><ion-icon name="information-outline"></ion-icon></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="corpo">
+        <aside id="lateral" class="lateral">
+            <div class="foti">
+                <div class="foto">
+                    <img src="./img/perfil2.png" alt="">
+                </div>
+            </div>
+            <div class="botoes-lateral">
+                <div class="bt"><ion-icon name="accessibility-outline"></ion-icon><a class="oi" href="#">PERFIL</a></div>
+                <div class="bt"><ion-icon name="earth-outline"></ion-icon><a class="oi" href="#">JORNADAS</a></div>
+                <div class="bt"><ion-icon name="pencil-outline"></ion-icon><a class="oi" href="#">PLANEJAR</a></div>
+                <div class="bt"><ion-icon name="add-circle-outline"></ion-icon><a class="oi" href="#">PUBLICAR</a></div>
+                <div class="bt"><ion-icon name="mail-unread-outline"></ion-icon><a class="oi" href="#">NOTIFICAÇÕES</a></div>
+                <div class="barra-pesquisa bt">
+                    <ion-icon name="search-circle-outline"></ion-icon>
+                    <input type="text" placeholder="Locais ou pessoas" name="" id="pesquisa">
+                </div>
+            </div>
+            <div class="botoes-baixo">
+                <ion-icon class="engrenagem" name="cog-outline"></ion-icon>
+                <ion-icon class="out" name="log-out-outline"></ion-icon>
+            </div>
+            
+        </aside>
+        <!-- bagulho responsivo -->
+        <div id="esconder" class="esconder-fundo">
+            <div id="pop-up" class="relatos pop-up">
+                <div class="header-pop">
+                    <a id="fechar" onclick="fechar_pop()" href="#">[X]</a>
+                </div>
+            </div>
+            <div id="pop-up" class="fotos pop-up">
+                <div class="header-pop">
+                    <a id="fechar" onclick="fechar_pop()" href="#">[X]</a>
+                </div>
+            </div>
+        </div>
+        <!-- bagulho responsivo -->
+        <section class="caixa-corpo">
+            <div class="caixa-publi">
+                    <div class="publi">
+                    <div class="informações-cima">
+                        <img src="./img/20190610_170800.jpg" alt="" width="50px" height="50px">
+                        <div class="info-pequenas">
+                            <a href="#">Ouro Preto - MG</a>
+                            <p>Publicado há 3 minutos</p>
+                            <h4>Por <a href="#">Cavalo da Silva</a></h4>
+                        </div>
+                    </div>
+                    <div class="informações-meio">
+                        <div class="titulo-publi">
+                            <h3>A nossa incrível viagem a ouro preto!</h3>
+                        </div>
+                        <div class="tags">
+                            <a href="#">Viagem</a>
+                            <a href="#">Exploração</a>
+                            <a href="#">Cultura</a>
+                            <a href="#">Fotografias</a>
+                        </div>
+                        <div class="imagem-principal">
+                            <img src="./img/20230416_174630.jpg" alt="" width="400px" height="400px">
+                        </div>
+                    </div>
+                    <div class="icones-alem">
+                        <div class="iconesetexto">
+                            <ion-icon onclick="abrir_pop()" id="botao-ativa-pop-up" name="reader-outline"></ion-icon>
+                            <p>Relato</p>
+                        </div>
+                        <div class="iconesetexto">
+                            <ion-icon onclick="abrir_pop()" name="images-outline"></ion-icon>
+                            <p>Galeria</p>
+                        </div>
+                        <div class="iconesetexto">
+                            <ion-icon name="thumbs-up-outline"></ion-icon>
+                            <p>Curtir</p>
+                        </div>
+                    </div>
+                    <div class="comentarios">
+                        <!-- <div class="foto-nome">
+                            <img src="./img/perfil2.png" alt="">
+                            <a href="#">Isaac Fernando</a>
+                        </div> -->
+                        <div class="comentarioebutao">
+                            <textarea id="" cols="45" rows="1" placeholder="Comentar"></textarea>
+                            <ion-icon name="navigate-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="todos-comentarios">
+                        <div class="userecomentario">
+                            <img src="./img/perfil2.png" alt="fotouser">
+                            <div class="dados-coment">
+                                <p>Que legal! Também estou super interessado em realizar algo assim. A energia precisa ser bem gasta. Nada melhor que uma viagem.</p>
+                                <div class="botoes-coment">
+                                    <a href="#">Isaac Fernando</a>
+                                    <p style="font-size: 12px; color: rgb(26, 28, 31);" >Em 10/05/2023</p>
+                                    <a href="#">Responder</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
