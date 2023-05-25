@@ -51,7 +51,6 @@ nav {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    background-color: #000000;
 }
 
 
@@ -64,6 +63,10 @@ nav {
     justify-content: center;
     background-color: #000000;
     font-family: 'Nunito', sans-serif;
+}
+
+.tendencias .faz {
+    display: none;
 }
 
 .tendencias ul {
@@ -137,8 +140,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: .2s;
-    transition-property: width;
+    transition: 1.0s;
+    overflow: hidden;
+
 }
 
 .foto {
@@ -169,7 +173,7 @@ nav {
 
 .bt {
     height: 50px;
-    width: 85%;
+    width: 212.50px;
     margin-top: 5px;
     display: flex;
     align-items: center;
@@ -193,6 +197,8 @@ nav {
     margin-left: 15px;
     margin-right: 20px;
 }
+
+
 
 .botoes-baixo {
     width: 100%;
@@ -233,6 +239,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 1s;
 }
 
 .caixa-publi {
@@ -503,6 +510,11 @@ nav {
         transition: 1s;
     }
 
+    .caixa-corpo {
+        margin-left: 160px;
+        transition: 1s;
+    }
+
     .bt a {
         display: none;
     }
@@ -510,6 +522,7 @@ nav {
     .bt {
         align-items: center;
         justify-content: center;
+        width: 120px;
     }
 
     .barra-pesquisa ion-icon {
@@ -549,5 +562,14 @@ nav {
         max-width: 150px;
         font-size: 12px;
     }
+}
 
+@media (max-width: 610px) {
+    .tendencias .faz {
+        display: flex;
+    }
+
+    .tendencias .aoba {
+        display: none;
+    }
 }
