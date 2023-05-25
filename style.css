@@ -38,6 +38,7 @@ nav {
     font-family: 'Nunito', sans-serif;
     user-select: none;
     cursor: pointer;
+    transition: 1s;
 }
 
 .pesquisa {
@@ -90,6 +91,7 @@ nav {
     margin: 20px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 1s;
 }
 
 .tendencias a {
@@ -492,9 +494,6 @@ nav {
 /*Resolução menor*/
 
 @media (max-width: 758px) {
-    .tendencias a {
-        font-size: 15px;
-    }
 
     .lateral {
         height: calc(100vh - 70px);
@@ -539,17 +538,13 @@ nav {
         margin-bottom: 15px;
     }
     
-    .tendencias a {
-        font-size: 15px;
-        display: none;
-    }
-    
     .tendencias li {
         font-size: 25px;
         height: 70px;
         width: 70px;
         align-items: center;
         justify-content: center;
+        transition: 1s;
     }
 
     .tendencias ion-icons {
@@ -561,6 +556,7 @@ nav {
         min-width: 150px;
         max-width: 150px;
         font-size: 12px;
+        transition: 1s;
     }
 }
 
