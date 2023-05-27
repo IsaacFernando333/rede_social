@@ -1,0 +1,11 @@
+contagem de dias: 4 ou 5
+criar mais uma nav na direita com outro tipo de informações 
+fazer a barra lateral e a de pesquisa serem retraiveis com botao ou responsatividade
+poder personalizar a cor tema do perfil (cores e dark ou white teme)
+adicionar comentário quando escreve e envia
+
+aprender a armazenar informações de tudo (fotos, textos, likes, comentários)
+sistema de cadastro e login
+login page
+criar landing page
+adicionar mudança de modo no butao config
