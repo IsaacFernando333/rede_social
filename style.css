@@ -131,6 +131,12 @@ nav {
 
 /*Barra Lateral*/
 
+.foti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .lateral {
     height: calc(100vh - 70px);
     min-width: 250px;
@@ -156,6 +162,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: yellowgreen;
 }
 
 .foti img {
@@ -440,7 +447,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100% + 70px);
+    height: calc(200%);
     position: absolute;
     background-color: #0000003f;
     z-index: 1;
